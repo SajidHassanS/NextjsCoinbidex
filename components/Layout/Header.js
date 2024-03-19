@@ -25,13 +25,13 @@ const Header = () => {
       <header
         className={
           "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
-          (scrollActive ? " shadow-md pt-0" : " pt-4")
+          (scrollActive ? " shadow-md pt-0" : " ")
         }
       >
-        <div className=" ">
+        <div className="bg-gradient-to-r py-3 from-blue-800 to-blue-200 ">
         <NumberTable/>
         </div>
-        <nav className=" px-3  sm:px-8 lg:px-32  mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className=" px-3  sm:px-8 lg:px-36  mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
             <Image src={LogoVPN} width={200} height={60}/>
             {/* <LogoVPN className="h-8 w-auto" /> */}

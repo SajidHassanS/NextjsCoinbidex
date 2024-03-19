@@ -33,9 +33,9 @@ const NumberTable = () => {
   }, []);
 
   return (
-    <div className=" grid sm:grid-cols-3 text-center gap-4 ">
+    <div className=" grid sm:grid-cols-3 text-center gap-4  ">
       <div className="py-3">
-      <h1 className="text-2xl lg:text-2xl xl:text-2xl font-medium text-black-600 leading-normal">
+      <h1 className="text-2xl lg:text-2xl xl:text-2xl text-white-500 font-medium text-black-600 leading-normal">
             Countdown To Coinbidex
             </h1>
        
@@ -46,17 +46,17 @@ const NumberTable = () => {
           {days}
           <span className="">DAYS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle  text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 ">:</span>
+        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize  ">:</span>
         <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
           {hours}
           <span className=" ">HOURS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle  text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 ">:</span>
+        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize ">:</span>
         <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
           {minutes}
           <span className="">MINS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle  text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 ">:</span>
+        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize">:</span>
         <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
           {seconds}
           <span className=" ">SECS</span>

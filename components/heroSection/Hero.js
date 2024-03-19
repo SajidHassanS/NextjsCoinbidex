@@ -4,6 +4,9 @@ import ButtonPrimary from "../misc/ButtonPrimary";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "../Layout/ScrollAnimationWrapper";
+import TickerNews from "./Ticker";
+import { HiSpeakerphone } from "react-icons/hi";
+import { BsArrowRightShort } from "react-icons/bs";
 
 const Hero = ({
   listUser = [
@@ -27,14 +30,15 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
+    <>
+    <div className="max-w-screen-xl mt-24 px-18 xl:px-8 mx-auto" id="about">
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
           variants={scrollAnimation}
         >
           <div className=" flex flex-col justify-center items-start row-start-2 sm:row-start-1">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl  text-black-600 leading-normal">
               Buy & Sell Digital Assets on{" "}
               <strong className="text-blue-800">Coinbidex</strong>.
             </h1>
@@ -54,7 +58,7 @@ const Hero = ({
                   height={383}
                   layout="responsive"
                 /> */}
-              <div className="py-2 px-2   sm:px-4  shadow-lg shadow-blue-800/50  rounded-large ">
+              <div className="py-2 px-2 my-8   sm:px-4  shadow-lg shadow-blue-800/50  rounded-large ">
                 <iframe
                   width="500"
                   height="700"
@@ -69,7 +73,9 @@ const Hero = ({
           </div>
         </motion.div>
       </ScrollAnimationWrapper>
-      <div className="relative w-full flex">
+
+     
+      {/* <div className="relative w-full flex">
         <ScrollAnimationWrapper className="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
           {listUser.map((listUsers, index) => (
             <motion.div
@@ -96,8 +102,21 @@ const Hero = ({
           className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
           style={{ filter: "blur(114px)" }}
         ></div>
-      </div>
+      </div> */}
+      
     </div>
+    <div className="bg-gradient-to-r py-3 d-flex flex-col from-blue-800 to-blue-200">
+    <div  className="sm:mx-80 " >
+        <HiSpeakerphone color="white" size={25}/>
+      </div>
+      <div>
+     <TickerNews/>
+     </div>
+     <div  className="sm:mx-80 " >
+        <BsArrowRightShort color="white" size={25}/>
+      </div>
+     </div>
+     </>
   );
 };
 
