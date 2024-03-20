@@ -31,9 +31,9 @@ const NumberTable = () => {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
-
+ 
   return (
-    <div className=" grid sm:grid-cols-3 text-center gap-4  ">
+    <div className=" grid sm:grid-cols-3 text-center gap-4 bg-gradient-to-r py-3 d-flex flex-col from-blue-800 to-blue-200  ">
       <div className="py-3">
       <h1 className="text-2xl lg:text-2xl xl:text-2xl text-white-500 font-medium text-black-600 leading-normal">
             Countdown To Coinbidex
