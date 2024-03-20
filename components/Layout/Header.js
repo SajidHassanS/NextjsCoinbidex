@@ -10,8 +10,6 @@ import { IoGiftOutline } from "react-icons/io5";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 import NumberTable from "./NumberTable";
 
-
-
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -29,17 +27,16 @@ const Header = () => {
         }
       >
         <div className="bg-gradient-to-r py-3 from-blue-800 to-blue-200 ">
-        <NumberTable/>
+          <NumberTable />
         </div>
         <nav className=" px-3  sm:px-8 lg:px-36  mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="col-start-1 col-end-2 flex items-center">
-            <Image src={LogoVPN} width={200} height={60}/>
+            <Image src={LogoVPN} width={200} height={60} />
             {/* <LogoVPN className="h-8 w-auto" /> */}
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-           <div
-          
-              activeClass="active"
+            <div
+              activeclass="active"
               to="about"
               spy={true}
               smooth={true}
@@ -55,7 +52,7 @@ const Header = () => {
               }
             >
               Market
-              </div>
+            </div>
             <div
               activeClass="active"
               to="feature"
@@ -68,13 +65,13 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "feature"
-                ? " text-blue-800 animation-active "
-                : " text-black-500 hover:text-blue-800 a")
+                  ? " text-blue-800 animation-active "
+                  : " text-black-500 hover:text-blue-800 a")
               }
             >
               Trade
-              </div>
-              <div
+            </div>
+            <div
               activeClass="active"
               to="pricing"
               spy={true}
@@ -86,13 +83,13 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "pricing"
-                ? " text-blue-800 animation-active "
-                : " text-black-500 hover:text-blue-800 a")
+                  ? " text-blue-800 animation-active "
+                  : " text-black-500 hover:text-blue-800 a")
               }
             >
               Features
-              </div>
-              <div
+            </div>
+            <div
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -104,13 +101,13 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "testimoni"
-                ? " text-blue-800 animation-active "
-                : " text-black-500 hover:text-blue-800 a")
+                  ? " text-blue-800 animation-active "
+                  : " text-black-500 hover:text-blue-800 a")
               }
             >
               Copy Trading
-              </div>
-              <div
+            </div>
+            <div
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -122,14 +119,14 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "testimoni"
-                ? " text-blue-800 animation-active "
-                : " text-black-500 hover:text-blue-800 a")
+                  ? " text-blue-800 animation-active "
+                  : " text-black-500 hover:text-blue-800 a")
               }
             >
               Earn
-              </div>
+            </div>
 
-              <div
+            <div
               activeClass="active"
               to="testimoni"
               spy={true}
@@ -141,28 +138,26 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "testimoni"
-                ? " text-blue-800 animation-active "
-                : " text-black-500 hover:text-blue-800 a")
+                  ? " text-blue-800 animation-active "
+                  : " text-black-500 hover:text-blue-800 a")
               }
             >
               Learn
-              </div>
+            </div>
           </ul>
-          
+
           <div className="col-start-10 gap-3 col-end-12 font-medium flex justify-end items-center">
-          {/* <Link href="/gift"> */}
-              {/* <a > */}
+            {/* <Link href="/gift"> */}
+            {/* <a > */}
             {/* <div ></div> */}
-                <IoGiftOutline size={25}/>
-              {/* </a> */}
+              <IoGiftOutline size={25} />
+            {/* </a> */}
             {/* </Link> */}
-
             {/* <Link href="/question"> */}
-              {/* <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"> */}
-                  <RxQuestionMarkCircled size={25}/>
-              {/* </a> */}
+            {/* <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all"> */}
+              <RxQuestionMarkCircled size={25} />
+            {/* </a> */}
             {/* </Link> */}
-
             <Link href="/">
               <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                   Sign In
