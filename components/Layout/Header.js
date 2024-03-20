@@ -206,7 +206,7 @@ const Header = () => {
               >
                 Learn
               </div>
-              <div className="col-start-10 gap-3 col-end-12 font-medium flex justify-center sm:justify-end items-center">
+              <div className=" d-block  sm:hidden col-start-10 gap-3 col-end-12 font-medium flex  sm:justify-end items-center">
                 <IoGiftOutline size={25} />
                 <RxQuestionMarkCircled size={25} />
               <Link href="/">
@@ -222,7 +222,21 @@ const Header = () => {
               </Link>
             </div>
             </nav>
-
+            <div className="hidden  sm:flex col-start-10 gap-3 col-end-12 font-medium flex w-100   items-center">
+                <IoGiftOutline size={25} />
+                <RxQuestionMarkCircled size={25} />
+              <Link href="/">
+                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                    Sign In
+                </a>
+              </Link>
+              <ButtonOutline>Sign Up</ButtonOutline>
+              <Link href="/">
+                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                    USD
+                </a>
+              </Link>
+            </div>
             
           </div>
         </div>
