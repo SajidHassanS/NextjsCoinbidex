@@ -25,7 +25,7 @@ const Market = () => {
     };
   }, []);
 
-  const scrollAnimation = useMemo(() => getScrollAnimation(), []);
+  
   return (
     <>
       <Layout>
@@ -135,9 +135,13 @@ const Market = () => {
         
 
       <div className="bg-white-300 ">
-      <div className="max-w-screen-xl py-8 px-2 sm:px-8  mx-auto">
-        {isMobile ? <MobileMarketTable /> :<MarketTable/>}
-      </div></div>
+      <div className="hidden sm:block max-w-screen-xl py-8 px-2 sm:px-8  mx-auto">
+         <MarketTable/>
+      </div>
+      <div className="sm:hidden block max-w-screen-xl py-8 px-2 sm:px-8  mx-auto">
+         <MobileMarketTable />
+      </div>
+      </div>
       </Layout>
     </>
   );

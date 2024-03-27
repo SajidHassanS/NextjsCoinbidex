@@ -21,8 +21,7 @@ const StakeAndEarn = () => {
             <strong className=" text-black-600">Stake and earn with ease!</strong>
           </h1>
         </div>
-        <ScrollAnimationWrapper>
-          <motion.div
+        <div
             className="py-6 sm:py-16 grid grid-cols-1 sm:grid-cols-3 gap-8"
             variants={scrollAnimation}
           >
@@ -65,8 +64,8 @@ const StakeAndEarn = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
-        </ScrollAnimationWrapper>
+          </div>
+       
       </div>
     </>
   );

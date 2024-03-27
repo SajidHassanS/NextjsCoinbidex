@@ -13,8 +13,8 @@ const Banner = () => {
   return (
     <>
       <div className="max-w-screen-xl  mt-24 px-18 xl:px-4 mx-auto">
-        <ScrollAnimationWrapper>
-          <motion.div
+      
+          <div
             className="grid grid-cols-1 sm:grid-cols-2  py-6 sm:py-16"
             variants={scrollAnimation}
           >
@@ -39,8 +39,8 @@ const Banner = () => {
                 <img src="assets/stacking/banner.svg" />
               </div>
             </div>
-          </motion.div>
-        </ScrollAnimationWrapper>
+          </div>
+        
       </div>
     </>
   );

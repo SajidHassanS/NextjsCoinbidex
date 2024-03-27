@@ -77,9 +77,15 @@ const Hero = ({}) => {
         </div> */}
       </div>
       <div className="bg-white-300 mt-5">
-      <div className="max-w-screen-xl py-16 px-2 sm:px-8  mx-auto">
-        {isMobile ? <MobileTab /> : <MyTabs />}
-      </div></div>
+      <div className="sm:hidden block max-w-screen-xl py-16 px-2 sm:px-8  mx-auto">
+       <MobileTab /> 
+      </div>
+
+      <div className="hidden sm:block max-w-screen-xl py-16 px-2 sm:px-8  mx-auto">
+       <MyTabs />
+      </div>
+      
+      </div>
     </>
   );
 };
