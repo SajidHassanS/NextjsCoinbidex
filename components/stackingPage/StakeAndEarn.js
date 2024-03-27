@@ -18,7 +18,7 @@ const StakeAndEarn = () => {
       <div className="max-w-screen-xl mt-24 px-18 xl:px-4 mx-auto">
       <div className="flex px-8 pb-6 flex-col justify-center items-start">
           <h1 className="text-2xl lg:text-3xl xl:text-4xl text-black-600 leading-normal">
-            <strong className=" text-black-600">All Products</strong>
+            <strong className=" text-black-600">Stake and earn with ease!</strong>
           </h1>
         </div>
         <ScrollAnimationWrapper>

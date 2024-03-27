@@ -404,9 +404,7 @@ const MobileMarketTable = () => {
       <div className="mx-auto px-4 py-5">
         <Tabs tabsData={tabsData} />
       </div>
-      <div className="flex py-8 justify-center">
-        <ButtonOutline>View the Full List</ButtonOutline>
-      </div>
+     
     </>
   );
 };

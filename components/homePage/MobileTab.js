@@ -273,7 +273,7 @@ const tabsData = [
   },
 ];
 
-const App = () => {
+const MobileTab = () => {
   return (
     <>
       <div className="  ">
@@ -286,4 +286,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MobileTab;

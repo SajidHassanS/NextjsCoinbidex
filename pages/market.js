@@ -11,7 +11,7 @@ import MobileMarketTable from "../components/market/MobileMarketTable";
 import MarketTable from "../components/market/MarketTable";
 const Market = () => {
   const [isMobile, setIsMobile] = useState(false);
-
+ 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 520); // Adjust the breakpoint as needed

@@ -20,7 +20,7 @@ const Banner = () => {
           >
             <div className="flex px-8 flex-col justify-center items-start">
               <h1 className="text-3xl lg:text-4xl xl:text-5xl text-black-600 leading-normal">
-                <strong className="text-blue-800">Staking</strong>
+                <strong className="text-black-600">Staking</strong>
               </h1>
               <p className="text-black-500 mt-4 mb-6">
                 Earn profits daily without risking your principal
