@@ -8,7 +8,7 @@ import eth from "../public/assets/market/ETH.png";
 import logo from "../public/assets/logonew.png";
 import MobileMarketTable from "../components/market/MobileMarketTable";
 
-import MarketTable from "../components/market/marketTable";
+import MarketTable from "../components/market/MarketTable";
 const Market = () => {
   const [isMobile, setIsMobile] = useState(false);
 
