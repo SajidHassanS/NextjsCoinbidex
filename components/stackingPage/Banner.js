@@ -29,7 +29,7 @@ const Banner = () => {
               <LuBookMarked />
               <p className="text-black-500 ">
                 
-                Beginner's guide
+                Beginner's guides
               </p>
               </div>
               <ButtonOutline>Log in to check profit</ButtonOutline>
