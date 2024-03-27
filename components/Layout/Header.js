@@ -2,18 +2,32 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
-import ButtonOutline from "../misc/ButtonOutline.";
+import ButtonOutline from "../misc/ButtonOutline";
 // import LogoVPN from "../../public/assets/Logo.svg";
 import LogoVPN from "../../public/assets/New123.png";
 import Image from "next/image";
 import { IoGiftOutline } from "react-icons/io5";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 import NumberTable from "./NumberTable";
+import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
+import cash from "../../public/assets/cash.png";
+import margin from "../../public/assets/margin.png";
+import leveraged from "../../public/assets/leveraged.png";
+import quick from "../../public/assets/quick.png";
+import buy from "../../public/assets/buy.png";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   const [open, setOpen] = useState(false);
+  const [showSlider, setShowSlider] = useState(false);
+  const [isTradeHovered, setIsTradeHovered] = useState(false);
+  const [isLearnHovered, setIsLearnHovered] = useState(false);
+  const toggleSlider = () => {
+    setShowSlider(!showSlider);
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollActive(window.scrollY > 20);
@@ -30,44 +44,21 @@ const Header = () => {
         <div className="hidden md:block">
           <NumberTable />
         </div>
-        {/* <nav className=" px-3  sm:px-8 lg:px-36  mx-auto grid grid-flow-col py-3 sm:py-4">
-      
-          <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-       
-          </ul>
-          
-          <div className="col-start-10 gap-3 col-end-12 font-medium flex justify-end items-center">
-        
-                <IoGiftOutline size={25}/>
-         
-
-              <RxQuestionMarkCircled size={25}/>
-           
-
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
-                  Sign In
-              </a>
-            </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
-                  USD
-              </a>
-            </Link>
-          </div>
-        </nav> */}
-        <div className="w-full text-gray-700 bg-cream">
-          <div className="flex flex-col  px-8 py-4 mx-auto md:items-center md:justify-between md:flex-row">
+        <div className="w-full text-gray-700 bg-cream ">
+          <div className="flex flex-col  px-8 py-3 mx-auto md:items-center md:justify-between md:flex-row relative">
             <div className="flex flex-row items-center justify-between ">
               <div className="relative ">
+              <Link href="/">
                 <div
-                  className="col-start-1 col-end-2 flex items-center"
-                  style={{ width: "200px", height: "auto" }}
+                  className="col-start-1 col-end-2 flex items-center cursor-pointer"
+                  style={{ width: "180px", height: "auto" }}
                 >
                   <Image src={LogoVPN} />
                 </div>
+                </Link>
               </div>
+              {/* hi saaji */}
+              
               <button
                 className="rounded-lg md:hidden focus:outline-none focus:shadow-outline"
                 onClick={() => setOpen(!open)}
@@ -97,6 +88,7 @@ const Header = () => {
                 open ? "flex" : "hidden"
               } md:flex flex-col md:flex-row md:items-center pb-4 md:pb-0 transition duration-300 ease-in-out`}
             >
+               <Link href="/market">
               <div
                 activeClass="active"
                 to="about"
@@ -115,24 +107,68 @@ const Header = () => {
               >
                 Market
               </div>
+              </Link>
               <div
                 activeClass="active"
-                to="feature"
+                to="trade"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 onSetActive={() => {
-                  setActiveLink("feature");
+                  setActiveLink("trade");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                  (activeLink === "feature"
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center" +
+                  (activeLink === "trade"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
                 }
+                onMouseEnter={() => setIsTradeHovered(true)}
+                onMouseLeave={() => setIsTradeHovered(false)}
               >
-                Trade
+                <div className="flex gap-2">
+                  Trade{" "}
+                  <div className="mt-1">
+                    <span className={` `}>
+                      {isTradeHovered ? (
+                        <IoIosArrowUp className="" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
+                    </span>
+                  </div>
+                </div>
+
+                {isTradeHovered && (
+                  <div className="md:absolute top-8 left-0 right-auto w-full md:w-[300px] bg-white-500  shadow-xl shadow-blue-200 mt-2">
+                    <div className="p-4 flex justify-between">
+                      <div className=" pr-2">
+                        {/* Left side menu items here */}
+                        <div className="">
+                        <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+                          <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+                          <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      {/* <div className="w-1/2 pl-2">
+                      
+                        Right Side Slider
+                      </div> */}
+                    </div>
+                  </div>
+                )}
               </div>
+
               <div
                 activeClass="active"
                 to="pricing"
@@ -143,7 +179,7 @@ const Header = () => {
                   setActiveLink("pricing");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative " +
                   (activeLink === "pricing"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
@@ -169,6 +205,7 @@ const Header = () => {
               >
                 Copy Trading
               </div>
+              <Link href="/stacking">
               <div
                 activeClass="active"
                 to="testimoni"
@@ -187,8 +224,9 @@ const Header = () => {
               >
                 Earn
               </div>
+              </Link>
 
-              <div
+              {/* <div
                 activeClass="active"
                 to="testimoni"
                 spy={true}
@@ -205,24 +243,85 @@ const Header = () => {
                 }
               >
                 Learn
+              </div> */}
+
+<div
+                activeClass="active"
+                to="learn"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onSetActive={() => {
+                  setActiveLink("learn");
+                }}
+                className={
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center" +
+                  (activeLink === "learn"
+                    ? " text-blue-800 animation-active "
+                    : " text-black-500 hover:text-blue-800 a")
+                }
+                onMouseEnter={() => setIsLearnHovered(true)}
+                onMouseLeave={() => setIsLearnHovered(false)}
+              >
+                <div className="flex gap-2">
+                  Learn{" "}
+                  <div className="mt-1">
+                    <span className={` `}>
+                      {isLearnHovered ? (
+                        <IoIosArrowUp className="" />
+                      ) : (
+                        <IoIosArrowDown />
+                      )}
+                    </span>
+                  </div>
+                </div>
+
+                {isLearnHovered && (
+                  <div className="md:absolute top-8 left-0 right-auto w-full md:w-[300px] bg-white-500  shadow-xl shadow-blue-200 mt-2">
+                    <div className="p-4 flex justify-between">
+                      <div className=" pr-2">
+                        {/* Left side menu items here */}
+                        <div className="">
+                        <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+                          <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+                          <div className="p-3 w-full  md:w-[270px] hover:bg-blue-100">
+                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      {/* <div className="w-1/2 pl-2">
+                      
+                        Right Side Slider
+                      </div> */}
+                    </div>
+                  </div>
+                )}
               </div>
-              <div className=" d-block  sm:hidden col-start-10 gap-3 col-end-12 font-medium flex  sm:justify-end items-center">
-                <IoGiftOutline size={25} />
-                <RxQuestionMarkCircled size={25} />
-              <Link href="/">
-                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
-                    Sign In
-                </a>
-              </Link>
-              <ButtonOutline>Sign Up</ButtonOutline>
-              <Link href="/">
-                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
-                    USD
-                </a>
-              </Link>
-            </div>
+              <div className=" flex justify-center gap-1  md:hidden col-start-10  col-end-12  font-medium    items-center">
+                  <IoGiftOutline size={25} />
+                  <RxQuestionMarkCircled size={25} />
+                <Link href="/">
+                  <span className="text-blue-800  sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                      Sign In
+                  </span>
+                </Link>
+                <ButtonOutline>Sign Up</ButtonOutline>
+                <Link href="/">
+                  <a className="text-black-600  sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                      USD
+                  </a>
+                </Link>
+              </div>
             </nav>
-            <div className="hidden  sm:flex col-start-10 gap-3 col-end-12 font-medium flex w-100   items-center">
+            <div className="hidden  md:flex col-start-10 gap-3 col-end-12 font-medium  w-100   items-center">
                 <IoGiftOutline size={25} />
                 <RxQuestionMarkCircled size={25} />
               <Link href="/">
@@ -237,7 +336,6 @@ const Header = () => {
                 </a>
               </Link>
             </div>
-            
           </div>
         </div>
       </header>

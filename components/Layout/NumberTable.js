@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import beta from "../../public/assets/beta1.png";
 import Link from "next/link";
-import ButtonPrimary from "../misc/ButtonPrimary";
+import ButtonOutline from "../misc/ButtonOutline";
 // import "./p2p.css";
 // import { Link, NavLink } from "react-router-dom";
 
@@ -33,39 +33,39 @@ const NumberTable = () => {
   }, []);
  
   return (
-    <div className=" grid sm:grid-cols-3 text-center gap-4 bg-gradient-to-r py-3 d-flex flex-col from-blue-800 to-blue-200  ">
-      <div className="py-3">
-      <h1 className="text-2xl lg:text-2xl xl:text-2xl text-white-500 font-medium text-black-600 leading-normal">
-            Countdown To Coinbidex
+    <div className=" flex justify-between bg-gradient-to-r from-blue-800 to-blue-500 px-10 py-3 md:none">
+      <div className="py-3 col-span-3 ">
+      <h1 className="text-white-500 text-2xl lg:text-2xl xl:text-2xl text-white-900 font-medium  leading-normal">
+             Countdown To Coinbidex
             </h1>
        
         <img src={beta} alt="" width={50} />
       </div>
-      <div className=" grid sm:grid-cols-7  ">
-        <div className="font-medium tracking-wide text-center py-3 px-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
+      <div className="flex  shadow-lg gap-4 bg-gradient-to-l from-blue-800 to-blue-500">
+        <div className=" px-4 text-xl text-white-300 py-2  flex flex-col items-center hover:bg-blue-800 hover:text-white-300">
           {days}
-          <span className="">DAYS</span>
+          <span className="text-xs text-white-300">DAYS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize  ">:</span>
-        <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
+        <span className="flex items-center text-white-500">:</span>
+        <div className="px-4 text-xl  text-xl text-white-300 py-2  flex flex-col items-center hover:bg-blue-800 hover:text-white-300">
           {hours}
-          <span className=" ">HOURS</span>
+          <span className="text-xs">HOURS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize ">:</span>
-        <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
+        <span className="flex items-center text-white-500">:</span>
+        <div className="px-4 text-xl  text-xl text-white-300 py-2  flex flex-col items-center hover:bg-blue-800 hover:text-white-300">
           {minutes}
-          <span className="">MINS</span>
+          <span className="text-xs">MINS</span>
         </div>
-        <span className="font-medium tracking-wide text-center py-3 align-middle text-white-500 capitalize">:</span>
-        <div className="font-medium tracking-wide text-center  py-3 align-middle border border-blue-800 text-blue-800 bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-blue-800 hover:text-white-500 transition-all hover:shadow-blue">
+        <span className="flex items-center text-white-500">:</span>
+        <div className="px-4 text-xl  text-xl text-white-300 py-2  flex flex-col items-center hover:bg-blue-800 hover:text-white-300">
           {seconds}
-          <span className=" ">SECS</span>
+          <span className="text-xs">SECS</span>
         </div>
       </div>
 
-      <div className="registerHead">
+      <div className="registerHead flex items-center col-span-3 ">
         <Link href="/whitelist">
-        <ButtonPrimary>Whitelist</ButtonPrimary>
+        <ButtonOutline>Whitelist</ButtonOutline>
           
         </Link>
       </div>
