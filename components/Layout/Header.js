@@ -118,7 +118,7 @@ const Header = () => {
                   setActiveLink("trade");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center" +
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center w-100" +
                   (activeLink === "trade"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
@@ -255,7 +255,7 @@ const Header = () => {
                   setActiveLink("learn");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center" +
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center w-100" +
                   (activeLink === "learn"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
