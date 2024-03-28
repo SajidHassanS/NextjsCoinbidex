@@ -118,7 +118,7 @@ const Header = () => {
                   setActiveLink("trade");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex md:items-center w-100" +
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex  w-100" +
                   (activeLink === "trade"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
@@ -315,9 +315,9 @@ const Header = () => {
                 </Link>
                 <ButtonOutline>Sign Up</ButtonOutline>
                 <Link href="/">
-                  <a className="text-black-600  sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                  <div className="text-black-600  sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                       USD
-                  </a>
+                  </div>
                 </Link>
               </div>
             </nav>
@@ -325,15 +325,15 @@ const Header = () => {
                 <IoGiftOutline size={25} />
                 <RxQuestionMarkCircled size={25} />
               <Link href="/">
-                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                <div className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                     Sign In
-                </a>
+                </div>
               </Link>
               <ButtonOutline>Sign Up</ButtonOutline>
               <Link href="/">
-                <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                <div className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                     USD
-                </a>
+                </div>
               </Link>
             </div>
           </div>

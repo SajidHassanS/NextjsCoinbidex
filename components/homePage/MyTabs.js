@@ -310,9 +310,9 @@ const App = () => {
     </div>
     <div className='flex justify-center'>
     <Link href="/market">
-          <a>
+          <div>
             <ButtonOutline>View the Full List</ButtonOutline>
-          </a>
+          </div>
         </Link>
     </div>
     </>

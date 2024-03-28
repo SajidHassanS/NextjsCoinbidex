@@ -29,11 +29,11 @@ const BuyCrypto = () => {
             swaps to hundreds of cryptocurrencies.
           </p>
 
-          <div className="flex gap-3 py-4">
-            <Image src={visa} width={80} height={40} />
-            <Image src={payoneer} width={80} height={40} />
-            <Image src={pay} width={80} height={40} />
-            <Image src={paygoogle} width={80} height={40} />
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-1 items-center py-4">
+            <Image src={visa} width={70} height={35} />
+            <Image src={payoneer} width={70} height={35} />
+            <Image src={pay} width={70} height={35} />
+            <Image src={paygoogle} width={70} height={35} />
           </div>
           <div className="py-4 mb-6">
             <hr />
@@ -47,9 +47,9 @@ const BuyCrypto = () => {
               Conveniently buy digital currency using third-party payment.
             </p>
           </div>
-          <div className="flex gap-3 py-4  ">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 py-4 items-center ">
             <div
-              className="col-start-1 col-end-2 flex items-center"
+              className=" "
               style={{ width: "100px", height: "auto" }}
             >
               <Image src={banx} />
@@ -58,19 +58,19 @@ const BuyCrypto = () => {
                     <Image src={banx} width={100} />
                     </div> */}
             <div
-              className="col-start-1 col-end-2 flex items-center"
+              className=" "
               style={{ width: "100px", height: "auto" }}
             >
               <Image src={mercuryo} />
             </div>
             <div
-              className="col-start-1 col-end-2 flex items-center"
+              className=""
               style={{ width: "100px", height: "auto" }}
             >
               <Image src={moonpay} />
             </div>
             <div
-              className="col-start-1 col-end-2 flex items-center"
+              className=""
               style={{ width: "100px", height: "auto" }}
             >
               <Image src={simplex} />
