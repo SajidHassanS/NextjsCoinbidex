@@ -118,7 +118,7 @@ const Header = () => {
                   setActiveLink("trade");
                 }}
                 className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover flex-col items-start relative flex " +
+                  "px-4 py-2 mx-2 cursor-pointer animation-hover  flex-col items-start relative flex " +
                   (activeLink === "trade"
                     ? " text-blue-800 animation-active "
                     : " text-black-500 hover:text-blue-800 a")
@@ -140,20 +140,20 @@ const Header = () => {
                 </div>
 
                 {isTradeHovered && (
-                  <div className="md:absolute top-8   bg-white-500  shadow-xl shadow-blue-200 mt-2">
-                    <div className="p-4 flex justify-between">
-                      <div className=" pr-2">
+                  <div className="md:absolute top-8 right-auto left-0 w-max  bg-white-500 rounded-lg  shadow-xl shadow-blue-200 mt-2">
+                    <div className="p-4  w-full">
+                      <div className=" w-full pr-2">
                         {/* Left side menu items here */}
-                        <div className="">
-                        <div className="p-3   hover:bg-blue-100">
+                        <div className="w-full">
+                        <div className="p-3 w-full  hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
-                          <div className="p-3  md:w-[270px] hover:bg-blue-100">
+                          <div className="p-3  w-full hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sells on the spot</p>
                           </div>
-                          <div className="p-3  md:w-[270px] hover:bg-blue-100">
+                          <div className="p-3 w-full hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
@@ -226,24 +226,7 @@ const Header = () => {
               </div>
               </Link>
 
-              {/* <div
-                activeClass="active"
-                to="testimoni"
-                spy={true}
-                smooth={true}
-                duration={1000}
-                onSetActive={() => {
-                  setActiveLink("testimoni");
-                }}
-                className={
-                  "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                  (activeLink === "testimoni"
-                    ? " text-blue-800 animation-active "
-                    : " text-black-500 hover:text-blue-800 a")
-                }
-              >
-                Learn
-              </div> */}
+              
 
 <div
                 activeClass="active"
@@ -277,20 +260,20 @@ const Header = () => {
                 </div>
 
                 {isLearnHovered && (
-                  <div className="md:absolute top-8   bg-white-500  shadow-xl shadow-blue-200 mt-2">
-                    <div className="p-4 flex justify-between">
-                      <div className=" pr-2">
+                  <div className="md:absolute top-8 right-auto left-0 w-max  bg-white-500 rounded-lg  shadow-xl shadow-blue-200 mt-2">
+                    <div className="p-4  w-full">
+                      <div className=" w-full pr-2">
                         {/* Left side menu items here */}
-                        <div className="">
-                        <div className="p-3   hover:bg-blue-100">
+                        <div className="w-full">
+                        <div className="p-3 w-full  hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
-                          <div className="p-3  md:w-[270px] hover:bg-blue-100">
+                          <div className="p-3  w-full hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sells on the spot</p>
                           </div>
-                          <div className="p-3  md:w-[270px] hover:bg-blue-100">
+                          <div className="p-3 w-full hover:bg-blue-100">
                           <h3 className=" text-black-600">Spot Trading</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
