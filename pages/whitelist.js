@@ -62,14 +62,14 @@ const Whitelist = () => {
       <div className="  my-36">
         <div className="overflow-hidden rounded-b-large bg-white">
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
-            <div className="w-100 relative">
-              <div className="absolute bottom-3/4  w-36  border-x-2 border-[#272727] h-60   translate-x-[70%] "></div>
+            <div className="w-100 relative ">
+              <div className="absolute left-0 right-0  bottom-[70%] mx-10  w-[78%]  border-x-2 border-[#272727] h-60 "></div>
               <div className="mx-auto  rotate-12 rounded-lg bg-white  shadow-lg ring-2 ring-inset ring-[#272727]  p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-lg ring-1 ring-[#272727]">
                   <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-2xl font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
                     Coinbidex Whitelist
                   </div>
-                  <div className="break-all px-5 pb-3.5 pt-5.5 text-center text-5xl font-semibold uppercase text-[#D9D9D9]  2xl:pt-4.5 text-6xl">
+                  <div className="break-all px-5 pb-3 pt-5 text-center  font-semibold uppercase text-[#D9D9D9]  2xl:pt-4 ">
                     Open
                   </div>
                 </div>
