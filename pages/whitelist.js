@@ -61,9 +61,15 @@ const Whitelist = () => {
 
       <div className=" bg-white-300 -mt-[5.5rem]">
         <div className="overflow-hidden rounded-b-large bg-white pt-[20.5rem] pb-34">
+<<<<<<< HEAD
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
             <div className="w-[300px] -mt-20 relative">
               <div className="absolute bottom-3/4  w-36  border-x-2 border-[#272727] h-60   translate-x-[70%] "></div>
+=======
+          <div className="relative hidden lg:block mt-36 w-full flex justify-center items-center">
+            <div className="absolute  start-1/2 -translate-x-1/2 px-[3.125rem] bottom-[70%] left-[50%]">
+              <div className="absolute bottom-3/4 h-[216px] w-36 -translate-x-1/2  border-x-2 border-[#272727] 2xl:h-60   translate-x-[70%] "></div>
+>>>>>>> a97b1340345a15a8759088a879fc4e1b904aea7e
               <div className="mx-auto  rotate-12 rounded-[1.75rem] bg-white  shadow-[4px_16px_0_#272727] ring-2 ring-inset ring-[#272727] min-w-[358px] p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-[1.25rem] ring-1 ring-[#272727]">
                   <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-xl/8 font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
