@@ -59,10 +59,10 @@ const Whitelist = () => {
         </div>
       </div>
 
-      <div className=" bg-white-300 -mt-[5.5rem]">
-        <div className="overflow-hidden rounded-b-large bg-white pt-[20.5rem] pb-34">
+      <div className="  my-36">
+        <div className="overflow-hidden rounded-b-large bg-white">
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
-            <div className="w-[300px] -mt-20 relative">
+            <div className="w-[300px] relative">
               <div className="absolute bottom-3/4  w-36  border-x-2 border-[#272727] h-60   translate-x-[70%] "></div>
               <div className="mx-auto  rotate-12 rounded-[1.75rem] bg-white  shadow-[4px_16px_0_#272727] ring-2 ring-inset ring-[#272727] min-w-[358px] p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-[1.25rem] ring-1 ring-[#272727]">
@@ -76,7 +76,7 @@ const Whitelist = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center mx-auto bg-blue-200 max-w-[800px] px-7 py-15  rounded-[2.5rem] px-26 pt-14">
+          <div className="flex flex-col justify-center mx-auto bg-blue-200 max-w-screen-md px-7 py-15  rounded-[2.5rem] px-26 pt-14">
             <div className="mx-auto my-10 ">
               <h1 className="mb-5 flex justify-center font-display text-4xl/none 2xl:text-4xl">
                 The Coinbidex Whitelist is now Open.
