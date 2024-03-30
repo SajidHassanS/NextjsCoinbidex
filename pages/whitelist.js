@@ -59,24 +59,24 @@ const Whitelist = () => {
         </div>
       </div>
 
-      <div className="mt-[4.75rem] bg-white-300 2xl:-mt-[5.5rem]">
-        <div className="overflow-hidden rounded-b-large bg-white 2xl:pt-[20.5rem] xl:pt-32 pb-34">
+      <div className=" bg-white-300 -mt-[5.5rem]">
+        <div className="overflow-hidden rounded-b-large bg-white pt-[20.5rem] pb-34">
           <div className="relative hidden lg:block mt-36">
-            <div className="absolute xl:bottom-[70%] start-1/2 -translate-x-1/2 px-[3.125rem] 2xl:bottom-[70%] 2xl:left-[50%] xl:left-[50%]">
-              <div className="absolute bottom-3/4 h-[216px] w-36 -translate-x-1/2 border-x-2 border-[#272727] 2xl:h-60 2xl:w-64  2xl:translate-x-[21%] xl:translate-x-[40%]"></div>
-              <div className="mx-auto min-w-[306px] rotate-12 rounded-[1.75rem] bg-white p-2.5 shadow-[4px_16px_0_#272727] ring-2 ring-inset ring-[#272727] 2xl:min-w-[358px] 2xl:p-5">
+            <div className="absolute  start-1/2 -translate-x-1/2 px-[3.125rem] bottom-[70%] left-[50%]">
+              <div className="absolute bottom-3/4 h-[216px] w-36 -translate-x-1/2  border-x-2 border-[#272727] 2xl:h-60   translate-x-[70%] "></div>
+              <div className="mx-auto  rotate-12 rounded-[1.75rem] bg-white  shadow-[4px_16px_0_#272727] ring-2 ring-inset ring-[#272727] min-w-[358px] p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-[1.25rem] ring-1 ring-[#272727]">
                   <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-xl/8 font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
                     Coinbidex Whitelist
                   </div>
-                  <div className="break-all px-5 pb-3.5 pt-5.5 text-center text-5xl font-semibold uppercase text-[#D9D9D9] 2xl:pb-1.5 2xl:pt-4.5 2xl:text-6xl/[5.5rem]">
+                  <div className="break-all px-5 pb-3.5 pt-5.5 text-center text-5xl font-semibold uppercase text-[#D9D9D9]  2xl:pt-4.5 text-6xl/[5.5rem]">
                     Open
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center mx-auto bg-blue-200 lg:max-w-[800px] px-7 py-15  2xl:rounded-[2.5rem] 2xl:px-26 2xl:pt-14">
+          <div className="flex flex-col justify-center mx-auto bg-blue-200 max-w-[800px] px-7 py-15  rounded-[2.5rem] px-26 pt-14">
             <div className="mx-auto my-10 ">
               <h1 className="mb-5 flex justify-center font-display text-4xl/none 2xl:text-4xl">
                 The Coinbidex Whitelist is now Open.

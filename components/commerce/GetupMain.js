@@ -690,7 +690,7 @@ const GetupMain = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="">
          
-        <div className='getup-main' >
+        <div className='getup-main  ' >
                 <div className='grid grid-cols-2  getup-main-inner'>
                     <div className='grid-cols-6 center  get-up-col'>
                         <div className="lg:text-4xl text-xl py-3 font-semibold">
