@@ -41,7 +41,7 @@ const Hero = ({}) => {
             
           >
             <div className="flex px-3  grid-cols-7 flex-col justify-center items-start">
-              <h1 className="text-3xl py-4 lg:text-4xl xl:text-6xl text-black-600 leading-relaxed">
+              <h1 className="text-3xl   py-4 lg:text-4xl xl:text-6xl text-black-600 leading-relaxed">
                 Buy & Sell Digital<br/> Assets on
                 <span className="text-blue-800 font-extrabold"> Coinbidex</span>.
               </h1>
@@ -54,17 +54,10 @@ const Hero = ({}) => {
             </div>
             <div className="mt-8 grid-cols-5 ">
               <div className="flex justify-end ">
-                <iframe
-                  className="border lg:hidden block  "
-                  style={{ height: "720px", width: "80%" }} 
-                  allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
-                  src="https://flooz.xyz/embed/trade?swapDisabled=false&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=true&onRampTokenAddress=0xd16Cb89F621820bC19DAE1C29c9DB6D22813b01D&onRampLockToken=true&stakeDisabled=true&network=bsc&lightMode=true&primaryColor=%230052fe&backgroundColor=transparent&roundedCorners=32&padding=40&refId=pMRL54"
-                  scrolling="no" 
-                  frameBorder="0" 
-                ></iframe>
+               
 
 <iframe
-                  className="banner__image hidden lg:block "
+                  className="banner__image  "
                   width="500"
                   height="700"
                   allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
