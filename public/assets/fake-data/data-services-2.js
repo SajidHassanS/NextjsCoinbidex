@@ -1,8 +1,8 @@
 
 
-import img1 from '../images/icon/manager.png'
-import img2 from '../images/icon/Lock.png'
-import img3 from '../images/icon/smartphone.png'
+import img1 from '../../../public/assets/images/icon/manager.png'
+import img2 from '../../../public/assets/images/icon/Lock.png'
+import img3 from '../../../public/assets/images/icon/smartphone.png'
 const dataServices2 = [
     {
         id: 1,

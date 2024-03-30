@@ -2,7 +2,7 @@ import React,{useState,useEffect,useMemo} from "react";
 import Layout from "../components/Layout/Layout";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import Image from "next/image";
-import asd from "../public/assets/market/ASD.png";
+import bnb from "../public/assets/bnb.png";
 import btc from "../public/assets/market/BTC.png";
 import eth from "../public/assets/market/ETH.png";
 import logo from "../public/assets/logonew.png";
@@ -39,11 +39,11 @@ const Market = () => {
                       <div className="flex  items-center gap-3 align-middle icon-container  ">
                         <Image
                           className="rounded-lg"
-                          src={asd}
+                          src={bnb}
                           width={40}
                           height={40}
                         />
-                        <h4 className="text-lg ">ASD/USDT</h4>
+                        <h4 className="text-lg ">BNB</h4>
                       </div>
 
                       <div className=" text-end">
@@ -66,7 +66,7 @@ const Market = () => {
                           width={40}
                           height={40}
                         />
-                        <h4 className="text-lg ">BTC/USDT</h4>
+                        <h4 className="text-lg ">BTC</h4>
                       </div>
 
                       <div className=" text-end">
@@ -89,7 +89,7 @@ const Market = () => {
                           width={40}
                           height={40}
                         />
-                        <h4 className="text-lg ">ETH/USDT</h4>
+                        <h4 className="text-lg ">ETH</h4>
                       </div>
 
                       <div className=" text-end">

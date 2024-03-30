@@ -31,28 +31,42 @@ const Hero = ({}) => {
 
   return (
     <>
-      <div className="max-w-screen-xl mt-24 px-18 xl:px-4 mx-auto">
+
+
+     
+      <div className="bg-blue-100 mt-24 px-18 xl:px-4 ">
         
           <div
-            className="grid grid-cols-1 sm:grid-cols-2  py-6 sm:py-16"
+            className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2  py-6 sm:py-16"
             
           >
-            <div className="flex px-8 flex-col justify-center items-start">
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl text-black-600 leading-normal">
-                Buy & Sell Digital Assets on{" "}
-                <strong className="text-blue-800">Coinbidex</strong>.
+            <div className="flex px-3  grid-cols-7 flex-col justify-center items-start">
+              <h1 className="text-3xl py-4 lg:text-4xl xl:text-6xl text-black-600 leading-relaxed">
+                Buy & Sell Digital<br/> Assets on
+                <span className="text-blue-800 font-extrabold"> Coinbidex</span>.
               </h1>
-              <p className="text-black-500 mt-4 mb-6">
+              <p className="text-black-500 py-8">
                 Coinbidex is the easiest, safest and fastest way to buy & sell
                 crypto assets.
               </p>
-              <ButtonOutline>Get Started</ButtonOutline>
+              <div className="my-4"> <ButtonOutline>Get Started</ButtonOutline></div>
+             
             </div>
-            <div className="mt-8 ">
-              <div className="flex justify-center ">
+            <div className="mt-8 grid-cols-5 ">
+              <div className="flex justify-end ">
                 <iframe
-                  className="border border-blue-200  shadow-lg shadow-blue-800/50 rounded-large"
+                  className="border lg:hidden block  "
                   style={{ height: "720px", width: "80%" }} 
+                  allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
+                  src="https://flooz.xyz/embed/trade?swapDisabled=false&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=true&onRampTokenAddress=0xd16Cb89F621820bC19DAE1C29c9DB6D22813b01D&onRampLockToken=true&stakeDisabled=true&network=bsc&lightMode=true&primaryColor=%230052fe&backgroundColor=transparent&roundedCorners=32&padding=40&refId=pMRL54"
+                  scrolling="no" 
+                  frameBorder="0" 
+                ></iframe>
+
+<iframe
+                  className="banner__image hidden lg:block "
+                  width="500"
+                  height="700"
                   allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
                   src="https://flooz.xyz/embed/trade?swapDisabled=false&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=true&onRampTokenAddress=0xd16Cb89F621820bC19DAE1C29c9DB6D22813b01D&onRampLockToken=true&stakeDisabled=true&network=bsc&lightMode=true&primaryColor=%230052fe&backgroundColor=transparent&roundedCorners=32&padding=40&refId=pMRL54"
                   scrolling="no" 

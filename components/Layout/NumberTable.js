@@ -16,7 +16,7 @@ const NumberTable = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date();
-      const targetDate = new Date(2024, 3, 25); // Set the target date
+      const targetDate = new Date(2024, 3, 30); // Set the target date
       const diff = targetDate - now;
       const daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hoursLeft = Math.floor(

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { FaFingerprint } from "react-icons/fa";
+
 // Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline";
@@ -168,7 +170,7 @@ const Header = () => {
                   </div>
                 )}
               </div>
-
+              <Link href="/bidexpay">
               <div
                 activeClass="active"
                 to="pricing"
@@ -185,8 +187,10 @@ const Header = () => {
                     : " text-black-500 hover:text-blue-800 a")
                 }
               >
-                Features
+                Bidex Pay
               </div>
+              </Link>
+              <Link href="/copytrading">
               <div
                 activeClass="active"
                 to="testimoni"
@@ -205,6 +209,7 @@ const Header = () => {
               >
                 Copy Trading
               </div>
+              </Link>
               <Link href="/stacking">
               <div
                 activeClass="active"
@@ -308,11 +313,14 @@ const Header = () => {
                 <IoGiftOutline size={25} />
                 <RxQuestionMarkCircled size={25} />
               <Link href="/">
-                <div className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
-                    Sign In
+                <div className="flex items-center gap-2 text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
+                <FaFingerprint size={20} />      Sign In 
+
                 </div>
               </Link>
+              <Link href="/whitelist">
               <ButtonOutline>Sign Up</ButtonOutline>
+              </Link>
               <Link href="/">
                 <div className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                     USD
