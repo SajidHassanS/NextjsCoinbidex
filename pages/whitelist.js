@@ -64,21 +64,21 @@ const Whitelist = () => {
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
             <div className="w-[300px] relative">
               <div className="absolute bottom-3/4  w-36  border-x-2 border-[#272727] h-60   translate-x-[70%] "></div>
-              <div className="mx-auto  rotate-12 rounded-[1.75rem] bg-white  shadow-[4px_16px_0_#272727] ring-2 ring-inset ring-[#272727] min-w-[358px] p-6">
-                <div className="divide-y divide-[#272727] overflow-hidden rounded-[1.25rem] ring-1 ring-[#272727]">
-                  <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-xl/8 font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
+              <div className="mx-auto  rotate-12 rounded-lg bg-white  shadow-lg ring-2 ring-inset ring-[#272727]  p-6">
+                <div className="divide-y divide-[#272727] overflow-hidden rounded-lg ring-1 ring-[#272727]">
+                  <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-2xl font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
                     Coinbidex Whitelist
                   </div>
-                  <div className="break-all px-5 pb-3.5 pt-5.5 text-center text-5xl font-semibold uppercase text-[#D9D9D9]  2xl:pt-4.5 text-6xl/[5.5rem]">
+                  <div className="break-all px-5 pb-3.5 pt-5.5 text-center text-5xl font-semibold uppercase text-[#D9D9D9]  2xl:pt-4.5 text-6xl">
                     Open
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center mx-auto bg-blue-200 max-w-screen-md px-7 py-15  rounded-[2.5rem] px-26 pt-14">
+          <div className="flex flex-col justify-center mx-auto bg-blue-200 max-w-screen-md px-7 py-15  rounded-large px-26 pt-14">
             <div className="mx-auto my-10 ">
-              <h1 className="mb-5 flex justify-center font-display text-4xl/none 2xl:text-4xl">
+              <h1 className="mb-5 flex justify-center font-display text-4xl 2xl:text-4xl">
                 The Coinbidex Whitelist is now Open.
               </h1>
               <form className="mainForm w-100 " onSubmit={handleSubmit}>
