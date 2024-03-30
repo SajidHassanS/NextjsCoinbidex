@@ -62,7 +62,7 @@ const Whitelist = () => {
       <div className="  my-36">
         <div className="overflow-hidden rounded-b-large bg-white">
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
-            <div className="w-[300px] relative">
+            <div className="w-100 relative">
               <div className="absolute bottom-3/4  w-36  border-x-2 border-[#272727] h-60   translate-x-[70%] "></div>
               <div className="mx-auto  rotate-12 rounded-lg bg-white  shadow-lg ring-2 ring-inset ring-[#272727]  p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-lg ring-1 ring-[#272727]">
