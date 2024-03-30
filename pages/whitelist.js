@@ -28,7 +28,11 @@ const Whitelist = () => {
   return (
     <Layout>
       {/* Modal */}
-      <div className={`fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto ${showModal ? "block" : "hidden"}`}>
+      <div
+        className={`fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto ${
+          showModal ? "block" : "hidden"
+        }`}
+      >
         <div className="fixed inset-0 bg-black opacity-50"></div>
         <div className="relative z-50 w-auto max-w-3xl mx-auto">
           <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white-300 outline-none focus:outline-none">
@@ -38,7 +42,9 @@ const Whitelist = () => {
                 className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                 onClick={() => setShowModal(false)}
               >
-                <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
+                <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
+                  ×
+                </span>
               </button>
             </div>
             <div className="relative p-6 flex-auto">
@@ -63,10 +69,10 @@ const Whitelist = () => {
         <div className="overflow-hidden rounded-b-large bg-white">
           <div className=" hidden lg:flex mt-36 w-full  justify-center items-center">
             <div className="w-100 relative ">
-              <div className="absolute left-0 right-0  bottom-[70%] mx-10  w-[78%]  border-x-2 border-[#272727] h-60 "></div>
-              <div className="mx-auto  rotate-12 rounded-lg bg-white  shadow-lg ring-2 ring-inset ring-[#272727]  p-6">
+              <div className="absolute -z-10 left-0 right-0  bottom-3/4 mx-10  w-3/4  border-x-2 border-[#272727] h-60 "></div>
+              <div className="mx-auto z-10 bg-white-300 shadow-black-600 rotate-12 rounded-lg bg-white  shadow-lg ring-2 ring-inset ring-[#272727]  p-6">
                 <div className="divide-y divide-[#272727] overflow-hidden rounded-lg ring-1 ring-[#272727]">
-                  <div className="bg-blue-400  px-2 pb-1.5 pt-2.5 text-center text-2xl font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
+                  <div className="bg-blue-400  px-2 pb-1 pt-2 text-center text-2xl font-semibold text-[#272727] 2xl:pb-3 2xl:pt-4 2xl:text-2xl">
                     Coinbidex Whitelist
                   </div>
                   <div className="break-all px-5 pb-3 pt-5 text-center  font-semibold uppercase text-[#D9D9D9]  2xl:pt-4 ">
@@ -82,7 +88,7 @@ const Whitelist = () => {
                 The Coinbidex Whitelist is now Open.
               </h1>
               <form className="mainForm w-100 " onSubmit={handleSubmit}>
-                <div className="my-3 flex justify-center w-100  " >
+                <div className="my-3 flex justify-center w-100  ">
                   <div className="relative flex items-center">
                     <AiOutlineUser className="text-black-500 absolute left-3" />
                     <input
@@ -92,7 +98,8 @@ const Whitelist = () => {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      style={{width:"100%"}} />
+                      style={{ width: "100%" }}
+                    />
                   </div>
                 </div>
                 <div className="my-3 flex justify-center  ">
@@ -105,7 +112,8 @@ const Whitelist = () => {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
-                      style={{width:"100%"}}  />
+                      style={{ width: "100%" }}
+                    />
                   </div>
                 </div>
                 <div className="my-3 flex justify-center ">
@@ -118,7 +126,8 @@ const Whitelist = () => {
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       required
-                      style={{width:"100%"}}  />
+                      style={{ width: "100%" }}
+                    />
                   </div>
                 </div>
                 <div className="my-3 gap-3 flex justify-center form-check">
@@ -139,7 +148,9 @@ const Whitelist = () => {
                   </label>
                 </div>
                 <div className="flex justify-center">
-                  <ButtonOutline onClick={handleSubmit}>Whitelist</ButtonOutline>
+                  <ButtonOutline onClick={handleSubmit}>
+                    Whitelist
+                  </ButtonOutline>
                 </div>
               </form>
             </div>
