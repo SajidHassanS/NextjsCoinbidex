@@ -34,7 +34,7 @@ const StakeAndEarn = () => {
                   <strong>Bringing together top PoS networks</strong>
                 </h4>
                 <p>
-                  Bitget brings together high-quality and industry-recognized PoS networks for staking.
+                  Coinbidex brings together high-quality and industry-recognized PoS networks for staking.
                 </p>
               </div>
             </div>

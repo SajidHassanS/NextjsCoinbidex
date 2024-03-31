@@ -22,22 +22,22 @@ const Accordion = () => {
     },
  
     {
-        title: "Why choose Bitget Staking?",
+        title: "Why choose Coinbidex Staking?",
         content: `
-          1. Interest is credited every day. If you stake on D (date), interest starts to accrue on D+1 and is paid on D+2. Bitget will pay interest to your spot account each day for as long as you keep staking.<br>
+          1. Interest is credited every day. If you stake on D (date), interest starts to accrue on D+1 and is paid on D+2. Coinbidex will pay interest to your spot account each day for as long as you keep staking.<br>
           2. You can stake at any time and redeem before the end of a staking period. Staking offers a flexible, free, and smooth experience.<br>
-          3. You get as much as you earn on the chain. Bitget does not take a cut of your earnings, and the ROI exactly matches that of the nodes.<br>
-          4. Earn principal-protected and low-risk income. Your assets will only grow during staking. No setup required, and no penalty (such as slashing) or other on-chain node staking risks. Bitget makes you an effortless earner!<br>
+          3. You get as much as you earn on the chain. Coinbidex does not take a cut of your earnings, and the ROI exactly matches that of the nodes.<br>
+          4. Earn principal-protected and low-risk income. Your assets will only grow during staking. No setup required, and no penalty (such as slashing) or other on-chain node staking risks. Coinbidex makes you an effortless earner!<br>
         `,
       },
     {
         title: "How is APR calculated?",
         content:
-         "The ROI displayed is the exact same as offered by the respective nodes and is not modified by Bitget in any way."  },
+         "The ROI displayed is the exact same as offered by the respective nodes and is not modified by Coinbidex in any way."  },
       {
         title: "How are my rewards calculated if I've subscribed to multiple PoS products?",
         content:
-        "Bitget aggregates your rewards from each network according to their respective APR, shown as your total earnings."  },
+        "Coinbidex aggregates your rewards from each network according to their respective APR, shown as your total earnings."  },
       {
         title: "When can I redeem my staking rewards?",
         content:

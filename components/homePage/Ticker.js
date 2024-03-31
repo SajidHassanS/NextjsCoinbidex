@@ -7,8 +7,8 @@ const TickerNews = () => {
   const headlines = [
     "Introducing Minimum Notional Value Requirement for Derivatives Trading",
     "Derivatives Welcome Gift: Collect 100 Points to Earn 100 USDT in Coupons",
-    "MEME Ecosystem Fiesta: Trade and Share 2,130,000,000 PEPE Prize Pool & More!",
-    "Bybit x XAI: 1,025,000 XAI Airdrop Extravaganza",
+    "MEME Ecosystem Coinbidex: Trade and Share 2,130,000,000 PEPE Prize Pool & More!",
+    "Coinbidex: 1,025,000 XAI Airdrop Extravaganza",
     "P2P 2nd Anniversary Rekindle: Earn Up to 115 USDT in P2P Coupons",
     // Add more headlines as needed
   ];

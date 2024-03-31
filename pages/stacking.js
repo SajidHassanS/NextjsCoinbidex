@@ -9,7 +9,7 @@ import StakeAndEarn from "../components/stackingPage/StakeAndEarn";
 const stacking = () => {
   return (
     <>
-      <SeoHead title='LaslesVPN Landing Page' />
+      <SeoHead title='C' />
       <Layout>
         <div className="bg-white-300">
        <Banner/>

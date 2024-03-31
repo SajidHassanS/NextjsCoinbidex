@@ -127,7 +127,7 @@ const AllProduct = () => {
             <div className="mx-auto flex justify-center items-center">
               <div className="bg-blue-200 rounded-lg p-1 flex justify-center items-center">
                 <CiGift />
-                <h1 className="">Biltget Bounus</h1>
+                <h1 className="">Coinbidex Bounus</h1>
               </div>
             </div>
             <div className="text-center mt-2">

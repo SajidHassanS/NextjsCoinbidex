@@ -148,15 +148,25 @@ const Header = () => {
                         {/* Left side menu items here */}
                         <div className="w-full">
                         <div className="p-3 w-full  hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <h3 className=" text-black-600 text-lg ">P2p</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
                           <div className="p-3  w-full hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <h3 className=" text-black-600 text-lg ">Margin Trading</h3>
                           <p>Buy & Sells on the spot</p>
                           </div>
                           <div className="p-3 w-full hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <h3 className=" text-black-600 text-lg ">Crypto Pricing</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+
+                          <div className="p-3 w-full hover:bg-blue-100">
+                          <h3 className=" text-black-600 text-lg ">Buy Crypto Via 3rd Party</h3>
+                          <p>Buy & Sell on the spot</p>
+                          </div>
+
+                          <div className="p-3 w-full hover:bg-blue-100">
+                          <h3 className=" text-black-600 text-lg ">Quick Buy & Swap</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
 
@@ -271,18 +281,14 @@ const Header = () => {
                         {/* Left side menu items here */}
                         <div className="w-full">
                         <div className="p-3 w-full  hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <h3 className=" text-black-600 text-lg font-bold">Discover</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
                           <div className="p-3  w-full hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
+                          <h3 className=" text-black-600 text-lg font-bold">Digest</h3>
                           <p>Buy & Sells on the spot</p>
                           </div>
-                          <div className="p-3 w-full hover:bg-blue-100">
-                          <h3 className=" text-black-600">Spot Trading</h3>
-                          <p>Buy & Sell on the spot</p>
-                          </div>
-
+                       
                         </div>
                       </div>
                       {/* <div className="w-1/2 pl-2">

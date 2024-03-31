@@ -12,7 +12,7 @@ import LastSlider from "../components/commerce/LastSlider";
 const commerce = () => {
   return (
     <>
-      <SeoHead title='LaslesVPN Landing Page' />
+      <SeoHead title='Coinbidex' />
       <Layout>
        
         <div className="bg-white-300">

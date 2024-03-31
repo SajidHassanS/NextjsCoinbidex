@@ -547,7 +547,7 @@ const CommerceBanner = () => {
   return (
     <>
       <div className="max-w-screen-xl   xl:px-4 mx-auto">
-        <div className="flex w-100  py-6 sm:py-16">
+        <div className="flex w-100  py-3 sm:py-12">
           <div className="star flex justify-start gap-8 ">
             <div className=" flex items-center ">
               <img src="assets/commerce/star.svg" width={30} />
