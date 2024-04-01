@@ -266,7 +266,7 @@ const tabsData = [
     ],
   },
   {
-    label: "AscendEX Earn",
+    label: "Coinbidex Earn",
     data: [
       // Add data for Tab 5
     ],

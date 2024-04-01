@@ -281,11 +281,11 @@ const Header = () => {
                         {/* Left side menu items here */}
                         <div className="w-full">
                         <div className="p-3 w-full  hover:bg-blue-100">
-                          <h3 className=" text-black-600 text-lg font-bold">Discover</h3>
+                          <h3 className=" text-black-600 text-lg ">Discover</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
                           <div className="p-3  w-full hover:bg-blue-100">
-                          <h3 className=" text-black-600 text-lg font-bold">Digest</h3>
+                          <h3 className=" text-black-600 text-lg ">Digest</h3>
                           <p>Buy & Sells on the spot</p>
                           </div>
                        
@@ -307,7 +307,9 @@ const Header = () => {
                       Sign In
                   </span>
                 </Link>
+                <Link href="/whitelist">
                 <ButtonOutline>Sign Up</ButtonOutline>
+                </Link>
                 <Link href="/">
                   <div className="text-black-600  sm:mx-4 capitalize tracking-wide hover:text-blue-800 transition-all">
                       USD
