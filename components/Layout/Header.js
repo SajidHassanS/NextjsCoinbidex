@@ -148,7 +148,7 @@ const Header = () => {
                         {/* Left side menu items here */}
                         <div className="w-full">
                         <div className="p-3 w-full  hover:bg-blue-100">
-                          <h3 className=" text-black-600 text-lg ">P2p</h3>
+                         <Link href="/p2p"> <h3 className=" text-black-600 text-lg ">P2p</h3></Link>
                           <p>Buy & Sell on the spot</p>
                           </div>
                           <div className="p-3  w-full hover:bg-blue-100">
