@@ -57,9 +57,9 @@ const Hero = ({}) => {
                
 
 <iframe
-                  className="banner__image  "
+                  className="banner__image rounded-large "
                   width="500"
-                  height="700"
+                  height="600"
                   allow="clipboard-read *; clipboard-write *; web-share *; accelerometer *; autoplay *; camera *; gyroscope *; payment *; geolocation *"
                   src="https://flooz.xyz/embed/trade?swapDisabled=false&swapLockToToken=false&onRampDisabled=false&onRampAsDefault=true&onRampTokenAddress=0xd16Cb89F621820bC19DAE1C29c9DB6D22813b01D&onRampLockToken=true&stakeDisabled=true&network=bsc&lightMode=true&primaryColor=%230052fe&backgroundColor=transparent&roundedCorners=32&padding=40&refId=pMRL54"
                   scrolling="no" 

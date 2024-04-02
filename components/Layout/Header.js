@@ -147,29 +147,39 @@ const Header = () => {
                       <div className=" w-full pr-2">
                         {/* Left side menu items here */}
                         <div className="w-full">
+                        <Link href="/p2p">
                         <div className="p-3 w-full  hover:bg-blue-100">
-                         <Link href="/p2p"> <h3 className=" text-black-600 text-lg ">P2p</h3></Link>
-                          <p>Buy & Sell on the spot</p>
+                         <h3 className=" text-black-600 text-lg ">P2p</h3>
+                          <p>Buy & sell cryptocurrencies using bank transfer and 800+ options</p>
                           </div>
+                          </Link>
+                          <Link href="/copytrading" >
+                          
                           <div className="p-3  w-full hover:bg-blue-100">
                           <h3 className=" text-black-600 text-lg ">Margin Trading</h3>
-                          <p>Buy & Sells on the spot</p>
+                          <p>Increase your profits with leverage</p>
                           </div>
+                          </Link>
+                          <Link href="/market"  target="_blank">
                           <div className="p-3 w-full hover:bg-blue-100">
                           <h3 className=" text-black-600 text-lg ">Crypto Pricing</h3>
-                          <p>Buy & Sell on the spot</p>
+                          <p>All Crypto Prising Chart</p>
                           </div>
-
+                          </Link>
+                         
+                          <Link href="https://flooz.xyz/buy/eth"  target="_blank">
                           <div className="p-3 w-full hover:bg-blue-100">
                           <h3 className=" text-black-600 text-lg ">Buy Crypto Via 3rd Party</h3>
-                          <p>Buy & Sell on the spot</p>
+                          <p>Buy Crypto Via Visa or MasterCard</p>
                           </div>
+                        </Link>
 
+                        <Link href="https://swap.coinbidex.com/" target="_blank">
                           <div className="p-3 w-full hover:bg-blue-100">
                           <h3 className=" text-black-600 text-lg ">Quick Buy & Swap</h3>
                           <p>Buy & Sell on the spot</p>
                           </div>
-
+                          </Link>
                         </div>
                       </div>
                       {/* <div className="w-1/2 pl-2">

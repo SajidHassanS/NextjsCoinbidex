@@ -64,7 +64,7 @@ const Table = () => {
   return (
     <div className="table-container">
       <table className="table-fixed w-full ">
-        <thead>
+        {/* <thead>
           <tr>
             <th className="w-1/5 text-left  border-t-2 py-3 border-b-2 border-white-500">Advertiser</th>
             <th className="w-1/5 text-left border-t-2 py-3 border-b-2 border-white-500">Price</th>
@@ -74,7 +74,7 @@ const Table = () => {
               <div className="gradient-background">Taker 0 Transaction Fees</div>
             </th>
           </tr>
-        </thead>
+        </thead> */}
         <tbody>
           {loading ? (
             <LoadingPlaceholders count={data.length} />
@@ -110,7 +110,7 @@ const LoadingPlaceholder = () => {
 };
 
 const TableData = ({ advertiserName, price, available, limits, paymentMethod, eligible }) => {
-  const firstLetter = advertiserName.charAt(0).toUpperCase();
+
   const selectIcon = (paymentMethod) => {
     switch (paymentMethod) {
       case "PLN Balance":
@@ -129,50 +129,58 @@ const TableData = ({ advertiserName, price, available, limits, paymentMethod, el
     }
   };
   return (
-    <tr className="tableRow">
-       <td className="w-1/5 py-2">
-        <div className="flex items-center">
-          <div className="flex-shrink-0 h-8 w-8 relative">
-            {/* Grey background for the first letter */}
-            <div className="first-letter border rounded-full flex items-center  justify-center">{firstLetter}</div>
-            {/* Dot icon positioned at the bottom right */}
+    <tr className="tableRow flex flex-col">
+      <td className="flex justify-between mt-5 py-3">
+        <div className="flex ">
+          <div className="f w-8">
             <GoDotFill size={20} className="dot-icon" color="green" />
           </div>
           <div className="ml-3">
             <div className="font-semibold text-white">{advertiserName}</div>
-            <div className="text-sm text-black-500">548 Order(s) | 99%</div>
+          
             <div className="text-sm text-green-400">Online</div>
           </div>
         </div>
+        <div>
+        <div className="text-sm text-black-500">Trades 130 | Completion</div>
+        <div>rates 98.00%</div>
+        </div>
+        
+        
       </td>
-      <td className="w-1/5 pln  py-2">
+      {/* <td className="w-1/5 pln  py-2">
         <p className="font-semibold text-white">
           {price}{" "}
           <span className="text-black-500 font-normal text-sm">PLN</span>
         </p>
-      </td>
-      <td className="w-2/5  py-2">
-        <div className="font-semibold text-white">
-          <div><p>Available</p></div>
+      </td> */}
+      <td className="  py-2">
+        <div className="font-semibold flex gap-3 text-white">
+          <div><p>Amounts</p></div>
           <div>{available}</div>
         </div>
-        <div className="font-semibold text-white">
+        <div className="font-semibold flex gap-3 text-white">
           <div><p>Limits</p></div>
           <div>{limits}</div>
         </div>
       </td>
-      <td className="w-1/5 py-2">
-        <div className="flex items-center">
-        <span className="font-semibold text-white">{paymentMethod}</span>
-          {selectIcon(paymentMethod)} {/* Render the icon */}
-          {/* Other content */}
+      <td className=" py-2">
+        <div className="flex justify-between items-center">
+          <div className="flex gap-4 ">
+          <TbBrandCashapp size={20} />
+        <AiOutlineBank size={20}/>
+        <FaPaypal size={20}/>
+        <FaRegCreditCard size={20}/>
+          </div>
+      
           <div className="flex flex-col sm:hidden">
-            <button className="buyUsdt-button">Buy USDT</button>
+            <h3>285.5 PKR</h3>
+            <button className=" bg-green-300 text-white-500 rounded-large">Buy </button>
           </div>
         </div>
       </td>
       <td className="w-1/5 px-4 py-2">
-        <div className="font-semibold text-white">
+        <div className="hidden font-semibold text-white">
           <ButtonOutline className="eligible-button">{eligible}</ButtonOutline>
         </div>
       </td>
